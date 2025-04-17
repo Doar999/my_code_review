@@ -28,7 +28,7 @@ jobs:
         run: mvn clean install
 
       - name: Copy code-review-sdk JAR
-        run: mvn dependency:copy -Dartifact=cn.doar:code-review-sdk:1.0 -DoutputDirectory=./libs
+        run: mvn dependency:copy -Dartifact=cn.doar:code-review:1.0 -DoutputDirectory=./libs
 
       - name: Run Code Review
         run: java -jar ./libs/code-review-sdk-1.0.jar
